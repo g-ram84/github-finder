@@ -18,7 +18,6 @@ function App() {
 			<Router>
 				<Routes>
 					<Route path="/" element={<Explore />} />
-					<Route path="/offers" element={<Offers />} />
 					<Route path="/category/:categoryName" element={<Category />} />
 					<Route path="/profile" element={<PrivateRoute />}>
 						<Route path="/profile" element={<Profile />} />
@@ -27,6 +26,7 @@ function App() {
 					<Route path="/sign-up" element={<SignUp />} />
 					<Route path="/forgot-password" element={<ForgotPassword />} />
 					<Route path="/create-listing" element={<CreateListing />} />
+					<Route path="/offers" element={<Offers />} />
 				</Routes>
 				<Navbar />
 			</Router>
